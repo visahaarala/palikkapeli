@@ -5,7 +5,7 @@
   --color-container: #fff;
   --animation-length: 10s;
   --animation-delay: 1s;
-  --radius-border: 0.2rem;
+  --border-radius: 0.2rem;
 }
 
 * {
@@ -23,7 +23,7 @@ html {
   box-sizing: border-box;
   font-size: 50%;
 }
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 500px) {
   html {
     font-size: 80%;
   }
@@ -61,8 +61,8 @@ body {
   width: 0.8rem;
   height: 7.2rem;
   position: absolute;
-  bottom: calc(2rem - var(--radius-border));
-  border-radius: var(--radius-border);
+  bottom: calc(2rem - var(--border-radius));
+  border-radius: var(--border-radius);
 }
 .pole__one {
   left: 6rem;
@@ -77,7 +77,7 @@ body {
 .bottom {
   background-color: var(--color-poles);
   height: 2rem;
-  border-radius: var(--radius-border);
+  border-radius: var(--border-radius);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -89,7 +89,7 @@ body {
   height: 2rem;
   background-color: var(--color-blocks);
   border: 0.5px solid rgba(0, 0, 0, 0.8);
-  border-radius: var(--radius-border);
+  border-radius: var(--border-radius);
   transform: translateX(-50%);
   position: absolute;
   left: 6rem;

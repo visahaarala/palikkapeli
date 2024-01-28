@@ -5,7 +5,7 @@
   --color-container: #fff;
   --animation-length: 10s;
   --animation-delay: 1s;
-  --radius-border: 0.2rem;
+  --border-radius: 0.2rem;
 }
 
 * {
@@ -21,17 +21,17 @@
 
 html {
   box-sizing: border-box;
+  
+  // width of container is 33rem
+  // fosi 50% => width = 33rem * 16px/rem * 0.5 = 264px
   font-size: 50%;
 
-  // width of container is 33rem
-  // fosi 60% => 33 * 16 * .6 = 317px
-
-  // fosi 80% => 422px
-  @media only screen and (min-width: 450px) {
+  // fosi 80%, width ≈ 422px
+  @media only screen and (min-width: 500px) {
     font-size: 80%;
   }
 
-  // fosi 120% => 633px
+  // fosi 120%, width ≈ 633px
   @media only screen and (min-width: 700px) {
     font-size: 120%;
   }
@@ -42,5 +42,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; // for mobile (with search field)
+  min-height: 80vh; // nicer for mobile (with search field)
 }
