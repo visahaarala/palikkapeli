@@ -21,18 +21,32 @@
 
 html {
   box-sizing: border-box;
-  
+
   // width of container is 33rem
-  // fosi 50% => width = 33rem * 16px/rem * 0.5 = 264px
+  // height of container is 16rem
+  // use em's for media queries, rem => em
+
+  // font-size 50%:
+  // width = 33rem * 0.5 = 16.5em
+  // height = 16rem * 0.5 = 8em
   font-size: 50%;
 
-  // fosi 80%, width ≈ 422px
-  @media only screen and (min-width: 500px) {
+  // in landscape iPhone, searchbar+tabs can be almost 25% of height
+  // take that into account in media queries
+
+  // font-size 80%:
+  // width = 26.4em, height = 12.8em
+  // width with 2em marginal for looks = 28.4em
+  // height with searchbar+tabs marginal = 12.8em * (1/0.75) ≈ 17.1em
+  @media only screen and (min-width: 28.4em) and (min-height: 17.1em) {
     font-size: 80%;
   }
 
-  // fosi 120%, width ≈ 633px
-  @media only screen and (min-width: 700px) {
+  // font-size 120%:
+  // width = 39.6em, height = 19.2em
+  // width with marginal = 41.6em
+  // height with marginal = 25.6em
+  @media only screen and (min-width: 41.6em) and (min-height: 25.6em) {
     font-size: 120%;
   }
 }
@@ -42,5 +56,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; // nicer for mobile (with search field)
+  min-height: 75vh; // fallback for older browsers, help with mobile search bar
+  min-height: 100dvh; // dynamic viewport height, considering mobile search bars etc
 }
