@@ -2,7 +2,7 @@
   background-color: var(--color-poles);
   transform: translateX(-50%);
   width: 0.8rem;
-  height: 7.2rem;
+  height: calc(7rem + var(--border-radius));
   position: absolute;
   bottom: calc(2rem - var(--border-radius));
   border-radius: var(--border-radius);
