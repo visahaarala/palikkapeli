@@ -1,0 +1,163 @@
+@keyframes blockOne {
+  2% {
+    bottom: 9.6rem;
+    left: 6rem;
+  }
+  6% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  8% {
+    left: 22rem;
+    bottom: 2rem;
+  }
+  14% {
+    left: 22rem;
+    bottom: 2rem;
+  }
+  16% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  18% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  20% {
+    left: 14rem;
+    bottom: 4rem;
+  }
+  28% {
+    left: 14rem;
+    bottom: 4rem;
+  }
+  30% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  32% {
+    left: 6rem;
+    bottom: 9.6rem;
+  }
+  34% {
+    left: 6rem;
+    bottom: 2rem;
+  }
+  40% {
+    left: 6rem;
+    bottom: 2rem;
+  }
+  42% {
+    left: 6rem;
+    bottom: 9.6rem;
+  }
+  46% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  48% {
+    left: 22rem;
+    bottom: 6rem;
+  }
+  60% {
+    left: 22rem;
+    bottom: 6rem;
+    opacity: 100%;
+  }
+  70% {
+    left: 22rem;
+    opacity: 0%;
+  }
+  80% {
+    left: 6rem;
+    opacity: 0%;
+  }
+  86% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blockTwo {
+  8% {
+    bottom: 4rem;
+  }
+  10% {
+    bottom: 9.6rem;
+    left: 6rem;
+  }
+  12% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  14% {
+    left: 14rem;
+    bottom: 2rem;
+  }
+  34% {
+    left: 14rem;
+    bottom: 2rem;
+  }
+  36% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  38% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  40% {
+    left: 22rem;
+    bottom: 4rem;
+  }
+  60% {
+    left: 22rem;
+    bottom: 4rem;
+    opacity: 100%;
+  }
+  70% {
+    left: 22rem;
+    opacity: 0%;
+  }
+  80% {
+    left: 6rem;
+    opacity: 0%;
+  }
+  86% {
+    opacity: 100%;
+  }
+}
+
+@keyframes blockThree {
+  20% {
+    bottom: 2rem;
+  }
+  22% {
+    left: 6rem;
+    bottom: 9.6rem;
+  }
+  26% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  28% {
+    left: 22rem;
+    bottom: 2rem;
+    opacity: 100%;
+  }
+  60% {
+    left: 22rem;
+    bottom: 2rem;
+    opacity: 100%;
+  }
+  70% {
+    left: 22rem;
+    opacity: 0%;
+  }
+  80% {
+    left: 6rem;
+    opacity: 0%;
+  }
+  86% {
+    opacity: 100%;
+  }
+}

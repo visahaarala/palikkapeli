@@ -1,0 +1,63 @@
+.pole {
+  background-color: var(--color-poles);
+  transform: translateX(-50%);
+  width: 0.8rem;
+  height: 7.2rem;
+  position: absolute;
+  bottom: calc(2rem - var(--radius-border));
+  border-radius: var(--radius-border);
+
+  &__one {
+    left: 6rem;
+  }
+
+  &__two {
+    left: 14rem;
+  }
+
+  &__three {
+    left: 22rem;
+  }
+}
+
+.bottom {
+  background-color: var(--color-poles);
+  height: 2rem;
+  border-radius: var(--radius-border);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.block {
+  height: 2rem;
+  background-color: var(--color-blocks);
+  border: 0.5px solid rgba(0,0,0,0.8);
+  border-radius: var(--radius-border);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 6rem;
+
+  &__one {
+    width: 4rem;
+    bottom: 6rem;
+    animation: blockOne var(--animation-length) var(--animation-delay) linear
+      infinite;
+  }
+
+  &__two {
+    width: 6rem;
+    bottom: 4rem;
+    animation: blockTwo var(--animation-length) var(--animation-delay) linear
+      infinite;
+  }
+
+  &__three {
+    width: 8rem;
+    bottom: 2rem;
+    animation: blockThree var(--animation-length) var(--animation-delay) linear
+      infinite;
+  }
+}

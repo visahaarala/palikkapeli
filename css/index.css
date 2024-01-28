@@ -1,0 +1,273 @@
+:root {
+  --color-poles: #393e46;
+  --color-blocks: rgba(34, 40, 49, 0.7);
+  --color-background: #f9f5f6;
+  --color-container: #fff;
+  --animation-length: 10s;
+  --animation-delay: 1s;
+  --radius-border: 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+}
+@media only screen and (min-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.container {
+  background-color: var(--color-container);
+  border-radius: var(--radius-border);
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.2);
+}
+
+.game {
+  position: relative;
+  width: 28rem;
+  height: 13rem;
+}
+
+.pole {
+  background-color: var(--color-poles);
+  transform: translateX(-50%);
+  width: 0.8rem;
+  height: 7.2rem;
+  position: absolute;
+  bottom: calc(2rem - var(--radius-border));
+  border-radius: var(--radius-border);
+}
+.pole__one {
+  left: 6rem;
+}
+.pole__two {
+  left: 14rem;
+}
+.pole__three {
+  left: 22rem;
+}
+
+.bottom {
+  background-color: var(--color-poles);
+  height: 2rem;
+  border-radius: var(--radius-border);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.block {
+  height: 2rem;
+  background-color: var(--color-blocks);
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius-border);
+  transform: translateX(-50%);
+  position: absolute;
+  left: 6rem;
+}
+.block__one {
+  width: 4rem;
+  bottom: 6rem;
+  animation: blockOne var(--animation-length) var(--animation-delay) linear infinite;
+}
+.block__two {
+  width: 6rem;
+  bottom: 4rem;
+  animation: blockTwo var(--animation-length) var(--animation-delay) linear infinite;
+}
+.block__three {
+  width: 8rem;
+  bottom: 2rem;
+  animation: blockThree var(--animation-length) var(--animation-delay) linear infinite;
+}
+
+@keyframes blockOne {
+  2% {
+    bottom: 9.6rem;
+    left: 6rem;
+  }
+  6% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  8% {
+    left: 22rem;
+    bottom: 2rem;
+  }
+  14% {
+    left: 22rem;
+    bottom: 2rem;
+  }
+  16% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  18% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  20% {
+    left: 14rem;
+    bottom: 4rem;
+  }
+  28% {
+    left: 14rem;
+    bottom: 4rem;
+  }
+  30% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  32% {
+    left: 6rem;
+    bottom: 9.6rem;
+  }
+  34% {
+    left: 6rem;
+    bottom: 2rem;
+  }
+  40% {
+    left: 6rem;
+    bottom: 2rem;
+  }
+  42% {
+    left: 6rem;
+    bottom: 9.6rem;
+  }
+  46% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  48% {
+    left: 22rem;
+    bottom: 6rem;
+  }
+  60% {
+    left: 22rem;
+    bottom: 6rem;
+    opacity: 100%;
+  }
+  70% {
+    left: 22rem;
+    opacity: 0%;
+  }
+  80% {
+    left: 6rem;
+    opacity: 0%;
+  }
+  86% {
+    opacity: 100%;
+  }
+}
+@keyframes blockTwo {
+  8% {
+    bottom: 4rem;
+  }
+  10% {
+    bottom: 9.6rem;
+    left: 6rem;
+  }
+  12% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  14% {
+    left: 14rem;
+    bottom: 2rem;
+  }
+  34% {
+    left: 14rem;
+    bottom: 2rem;
+  }
+  36% {
+    left: 14rem;
+    bottom: 9.6rem;
+  }
+  38% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  40% {
+    left: 22rem;
+    bottom: 4rem;
+  }
+  60% {
+    left: 22rem;
+    bottom: 4rem;
+    opacity: 100%;
+  }
+  70% {
+    left: 22rem;
+    opacity: 0%;
+  }
+  80% {
+    left: 6rem;
+    opacity: 0%;
+  }
+  86% {
+    opacity: 100%;
+  }
+}
+@keyframes blockThree {
+  20% {
+    bottom: 2rem;
+  }
+  22% {
+    left: 6rem;
+    bottom: 9.6rem;
+  }
+  26% {
+    left: 22rem;
+    bottom: 9.6rem;
+  }
+  28% {
+    left: 22rem;
+    bottom: 2rem;
+    opacity: 100%;
+  }
+  60% {
+    left: 22rem;
+    bottom: 2rem;
+    opacity: 100%;
+  }
+  70% {
+    left: 22rem;
+    opacity: 0%;
+  }
+  80% {
+    left: 6rem;
+    opacity: 0%;
+  }
+  86% {
+    opacity: 100%;
+  }
+}
